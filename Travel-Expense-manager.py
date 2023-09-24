@@ -117,7 +117,7 @@ for day in range(1,int(day_of_travel) + 1):
             lodging_total -= float(old_charge_lodging)
             lodging_total += new_charge_lodging
 # if statement for food's expenses choose, and asks day to modify and the new value, with try/except statements to assure correctness of user input
-        if charge_category == 'food':
+        elif charge_category == 'food':
             check_08 = False
             while check_08 == False:
                 try:    
@@ -150,7 +150,7 @@ for day in range(1,int(day_of_travel) + 1):
             food_total -= float(old_charge_food)
             food_total += new_charge_food
 # if statement for transportation's expenses choose, and asks day to modify and the new value, with try/except statements to assure correctness of user input
-        if charge_category == 'transportation':
+        elif charge_category == 'transportation':
             check_10 = False
             while check_10 == False:
                 try:    
@@ -183,7 +183,7 @@ for day in range(1,int(day_of_travel) + 1):
             transportation_total -= float(old_charge_transportation)
             transportation_total += new_charge_transportation
 # if statement for entertainment's expenses choose, and asks day to modify and the new value, with try/except statements to assure correctness of user input
-        if charge_category == 'entertainment':
+        elif charge_category == 'entertainment':
             check_12 = False
             while check_12 == False:
                 try:    
